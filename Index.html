@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Transporte</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+        .slides {
+            display: flex;
+            animation: slide 10s infinite;
+        }
+        .slides img {
+            width: 100%;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            100% { transform: translateX(0); }
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Empresa de Transporte</h1>
+        <p>Misión y Visión de la Empresa</p>
+    </header>
+    <div class="container">
+        <div class="slider">
+            <div class="slides">
+                <img src="camion1.jpg" alt="Camión 1">
+                <img src="camion2.jpg" alt="Camión 2">
+                <img src="camion3.jpg" alt="Camión 3">
+            </div>
+        </div>
+        <section>
+            <h2>Bienvenidos a Nuestra Empresa</h2>
+            <p>Somos líderes en el transporte de mercancías a nivel nacional e internacional. Nuestra flota de camiones está equipada con la última tecnología para garantizar la seguridad y eficiencia en cada envío.</p>
+        </section>
+    </div>
+    <footer>
+        <p>Contacto: info@empresa.com | Tel: +52 55 1234 5678</p>
+    </footer>
+</body>
+</html>
